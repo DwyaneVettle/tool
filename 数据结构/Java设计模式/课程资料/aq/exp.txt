@@ -1,0 +1,103 @@
+数据安全：
+	数据库
+		t_user
+		id	userName  password   ......
+		1    	陈南		7143f862dc4936367e6eb590daf83157
+		2    	老严		123456
+
+
+加密：
+	密文：加密之后生成的数据
+	明文：原文，需要加密的数据
+	秘钥(yue)：加密或者是解密的一个关键数据
+	
+	分类：
+		不可逆加密
+			MD5:摘要加密  将所有数据 统一加密成一个32位的数据
+		
+		可逆加密
+			对称加密	加密和解密使用同一个秘钥
+				AES   DES   
+			
+			非对称加密	加密和解密不是使用同一个秘钥
+				RSA
+			
+			Base64   
+			
+	
+	发展：
+		凯撒加密:高卢战争
+			英文字母，按照固定的位移来转换成一个新的密文
+			int py = 3;
+			hello world  ->  kho........
+			
+			安全性不高
+	
+		栅栏加密：
+			woniuxy
+				按照一个固定长度 int py = 3;拆分
+			won  iux  y
+				按照每一个片段的首字母组合
+			wiy ou nx  -> wiyounx
+							
+		维吉尼亚：
+			秘钥
+		
+			单一恺撒密码的基础上扩展出多表密码，称为“维吉尼亚”密码。它是由16世纪法国亨利三世王朝的布莱瑟·维吉尼亚发明的，
+			其特点是将26个恺撒密表合成一个，见下表：
+			原: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+			A :A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+			B :B C D E F G H I J K L M N O P Q R S T U V W X Y Z A
+			C: C D E F G H I J K L M N O P Q R S T U V W X Y Z A B
+			D: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+			.....
+			
+			以下如此类推。
+			维吉尼亚密码引入了“密钥”的概念，即根据密钥来决定用哪一行的密表来进行替换，以此来对抗字频统计。
+			假如以上面第一行代表明文字母，左面第一列代表密钥字母，对如下明文加密：
+			TO BE OR NOT TO BE THAT IS THE QUESTION
+			当选定RELATIONS作为密钥时，加密过程是：明文一个字母为T，第一个密钥字母为R，因此可以找到在R行中代替T的为K，依此类推，得出对应关系如下：
+			密钥:RELAT IONSR ELATI ONSRE LATIO NSREL
+			明文:TOBEO RNOTT OBETH ATIST HEQUE STION
+			密文:KSMEH ZBBLK SMEMP OGAJX SEJCS FLZSY
+
+		恩尼格玛:
+			希特勒  德国  key 自己去看
+
+
+
+Base64:
+	将不可见数据加密为可见数据,通常用在一些算法的中间环节
+
+MD5:
+	摘要加密  将所有数据 统一加密成一个32位的数据
+	
+	123456
+	前端数据提交到服务器，通过MD5加密 -》 密文 和 数据库中的密文
+	
+	文件完整性	1G -> md5
+	
+AES:
+	对称加密	
+	
+	通常用在需要逆向解密的地方
+		db.properties  -> password = ?
+	
+RSA:
+	安全级别很高	
+		私钥 公钥
+	
+	1.私钥加密  公钥解密
+	2.公钥加密  私钥解密
+	
+	数字签名 sign:
+		区别请求的身份（验证请求本身的合法性）
+		
+	前端资源需要混淆
+	混淆：压缩，!和代码格式化
+		
+	
+	
+	
+
+

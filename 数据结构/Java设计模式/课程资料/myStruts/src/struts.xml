@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+	<package name="my" namespace="/" extends="struts-default">
+		<action name="loginPage" class="action.UserAction" method="loginPage">
+			<result name="success">/login.html</result>
+			<result name="error">/error.html</result>
+		</action>
+	</package>
+</struts>
+

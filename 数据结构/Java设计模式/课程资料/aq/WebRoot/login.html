@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>官方界面</title>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/jsencrypt.min.js"></script>
+	<script type="text/javascript" src="js/my.js"></script>
+	<script type="text/javascript">
+		function sendSignPost(){
+			
+			myAjax(
+				'reg.action',
+				{'userName':$('#userName').val()},
+				function(){
+					//回调函数处理略。。。
+				}
+			);
+		
+			return false;
+		}
+	
+	</script>
+  </head>
+  
+  <body>
+  	<form action="reg.action" method="post" onsubmit="return sendSignPost();">
+  		用户名:<input id="userName" name="userName"><br/>
+  		密码：<input name="password"><br/>
+  		确认密码：<input name="repassword"><br/>
+  		<!-- 其他略。。。 -->
+  		<input type="submit" value="注册">
+  	</form>
+  	<div id="d1">
+  	
+  	</div>
+  </body>
+</html>
