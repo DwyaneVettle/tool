@@ -1,0 +1,5 @@
+用户名：Michealzou
+公钥作为用户名登录：51af8c37ce4ade1249e03ca9ece08b41
+私钥作为密码登录：a0bc39e063977a2c8d9e60637430c418
+
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition

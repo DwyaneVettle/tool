@@ -1,0 +1,44 @@
+ 
+
+$buttonHeight:110px;
+
+.page-good-detail {
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #F5F6F7;
+
+  &-scrolllist {
+    // @include page-scroll(0, 0); 
+    box-sizing: border-box; 
+    padding-bottom:$buttonHeight+30px;
+
+    .top-block,.bottom-block{
+      padding:0 32px;
+      background-color: white;
+    } 
+  }
+
+  &-button{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.14);
+    border-radius: 0px 2px 2px 0px;
+    background-color: white;
+    height:$buttonHeight; 
+    padding:4px 50px;
+    z-index: 100;
+
+    .sp-page-common-button{
+      height: 100px!important;
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.14);
+      border-radius: 50px;
+      font-size: 36px;
+      font-weight: 500;
+      text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.14);
+    }
+  }
+
+}

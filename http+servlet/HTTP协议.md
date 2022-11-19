@@ -402,7 +402,7 @@ Servlet的实现步骤：
 
 
 
-![](../imags/接受请求，相应结果.png)
+![](HTTP协议.assets/接受请求，相应结果.png)
 
 ```
 package com.huwa.servlet;
@@ -896,7 +896,6 @@ import java.io.IOException;
  * @Author zoutr
  * @Description
  * @Date 2021/6/16
- * @Copyright 中信网络科技有限公司 Copyright(c)
  **/
 @WebServlet("/ser04")
 public class Servlet06 extends HttpServlet {

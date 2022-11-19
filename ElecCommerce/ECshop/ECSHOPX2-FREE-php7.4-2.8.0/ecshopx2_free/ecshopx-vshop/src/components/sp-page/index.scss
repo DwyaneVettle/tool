@@ -1,0 +1,86 @@
+.sp-page {
+  &.has-navbar {
+    padding-top: $navigate-height;
+  }
+
+  &.has-footer {
+    padding-bottom: 120px;
+    &.ipx {
+      padding-bottom: 140px;
+    }
+  }
+
+  &.ipx {
+    padding-bottom: 20px;
+    .sp-page-footer {
+      height: 140px;
+    }
+    .sp-float-layout-ft {
+      padding-bottom: 40px;
+    }
+    .at-tab-bar {
+      height: 140px;
+    }
+  }
+
+  .float-container {
+    position: fixed;
+    bottom: 150px;
+    right: 30px;
+    z-index: $z-index-level-3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+
+    .icon-arrow-up {
+      font-size: 38px;
+      color: #fff;
+    }
+  }
+
+  &-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: $toolbar-height + 20;
+    z-index: $z-index-level-3;
+    background: #fff;
+  }
+
+  .custom-navigation {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    .left-container,
+    .right-container {
+      width: 100px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .title-container {
+      flex: 1;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+    .icon-home1 {
+      font-size: 40px;
+      color: #fff;
+    }
+    .icon-shangyiyehoutuifanhui-xianxingyuankuang {
+      font-size: 50px;
+      color: #fff;
+    }
+  }
+}

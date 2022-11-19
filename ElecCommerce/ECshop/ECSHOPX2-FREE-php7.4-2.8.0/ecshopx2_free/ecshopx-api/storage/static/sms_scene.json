@@ -1,0 +1,74 @@
+[
+    {
+        "scene_title": "bind_store","scene_name":"绑定店铺验证码", "template_type": "0", "default_template": "${验证码}是您绑定店铺验证码，有效期为30分钟", "variables": [{"var_name": "code", "var_title": "验证码"}]
+    },
+    {
+        "scene_title": "sign","scene_name":"注册验证码", "template_type": "0", "default_template": "${验证码}是您的注册验证码，有效期为30分钟", "variables": [{"var_name": "code", "var_title": "验证码"}]
+    },
+    {
+       "scene_title": "forgot_password", "scene_name":"找回密码验证码", "template_type": "0", "default_template": "${验证码}是您的找回密码验证码，有效期为30分钟", "variables": [{"var_name": "code", "var_title": "验证码"}]
+    },
+    {
+        "scene_title": "login","scene_name":"手机号登录验证码", "template_type": "0", "default_template": "${验证码}是您的登录验证码，有效期为30分钟", "variables": [{"var_name": "code", "var_title": "验证码"}]
+    },
+    {
+        "scene_title": "update","scene_name":"手机号修改验证码", "template_type": "0", "default_template": "${验证码}是您的修改手机号时的验证码，有效期为30分钟", "variables": [{"var_name": "code", "var_title": "验证码"}]
+    },
+    {
+        "scene_title": "merchant_login","scene_name":"商户入驻/登录验证码", "template_type": "0", "default_template": "${验证码}是您的验证码，有效期为30分钟", "variables": [{"var_name": "code", "var_title": "验证码"}]
+    },
+    {
+        "scene_title": "order_pickup","scene_name":"订单提货码", "template_type": "0", "default_template": "您的${订单号}订单的提货码是${提货码}，有效期为30分钟", "variables": [{"var_name": "order_id", "var_title": "订单号"}, {"var_name": "code", "var_title": "提货码"}]
+    },
+    {
+        "scene_title": "member_anniversary","scene_name":"会员关怀 赠送", "template_type": "1", "default_template": "历史上的今天，您成为了${品牌}会员。感谢您一路的支持，特此为您奉上${赠送内容}。到店更有其他惊喜", "variables": [{"var_name": "brand_name", "var_title": "品牌"}, {"var_name": "gift", "var_title": "赠送内容"}]
+    },
+    {
+        "scene_title": "member_birthday","scene_name":"会员关怀 生日", "template_type": "1", "default_template": "尊敬的会员：值此您生日之际，衷心祝您生日快乐！为感谢您对本店的支持，特此赠送您${赠送内容}。详情请查看${小程序名称}小程序", "variables": [{"var_name": "app_name", "var_title": "小程序名称"}, {"var_name": "gift", "var_title": "赠送内容"}]
+    },
+    {
+        "scene_title": "member_day","scene_name":"会员关怀 品牌赠送", "template_type": "1", "default_template": "${会员日时间}是${品牌}会员日，特此为您奉上${赠送内容}。到店更有其他惊喜", "variables": [{"var_name": "member_day", "var_title": "会员日时间"}, {"var_name": "brand_name", "var_title": "品牌"}, {"var_name": "gift", "var_title": "赠送内容"}]
+    },
+    {
+        "scene_title": "member_upgrade","scene_name":"会员等级", "template_type": "1", "default_template": "恭喜您成为${品牌}的${会员等级名称}，特此为您奉上${赠送内容}。到店更有其他惊喜", "variables": [{"var_name": "brand_name", "var_title": "品牌"}, {"var_name": "grade_name", "var_title": "会员等级名称"}, {"var_name": "gift", "var_title": "赠送内容"}]
+    },
+    {
+        "scene_title": "member_vip_upgrade","scene_name":"付费会员等级", "template_type": "1", "default_template": "恭喜您成为${品牌}的${付费会员等级名称}，特此为您奉上${赠送内容}", "variables": [{"var_name": "brand_name", "var_title": "品牌"}, {"var_name": "grade_name", "var_title": "付费会员等级名称"}, {"var_name": "gift", "var_title": "赠送内容"}]
+    },
+    {
+       "scene_title": "merchant_audit_success_notice", "scene_name":"商户入驻 审核完成通知", "template_type": "1", "default_template": "您提交的入驻申请已审批完成，请及时查看。", "variables": []
+    },
+    {
+        "scene_title": "merchant_reset_password_notice","scene_name":"密码重置通知", "template_type": "1", "default_template": "您在后台重置的密码为${随机密码}。", "variables": [{"var_name": "password", "var_title": "随机密码"}]
+    },
+    {
+        "scene_title": "merchant_enter_success_notice","scene_name":"入驻成功通知", "template_type": "1", "default_template": "您申请的商户入驻已完成，地址为${商户网址}，账号为${手机号}，密码为${随机密码}。", "variables": [{"var_name": "merchant_address", "var_title": "商户网址"}, {"var_name": "password", "var_title": "随机密码"}, {"var_name": "phone", "var_title": "手机号"}]
+    },
+    {
+        "scene_title": "trade_wxpay_success","scene_name":"微信支付成功通知", "template_type": "1", "default_template": "您于${支付时间}通过微信支付${支付金额}元。", "variables": [{"var_name": "pay_time", "var_title": "支付时间"}, {"var_name": "pay_money", "var_title": "支付金额"}]
+    },
+    {
+        "scene_title": "hexiao_notice","scene_name":"核销完成通知", "template_type": "1", "default_template": "您的${权益名称}在${门店名称}使用${数量}，剩余可用次数：${可用次数}", "variables": [{"var_name": "rights_name", "var_title": "权益名称"}, {"var_name": "shop_name", "var_title": "门店名称"},{"var_name": "num", "var_title": "数量"},{"var_name": "available_times", "var_title": "可用次数"}]
+    },
+    {
+       "scene_title": "bargainFinish_notice", "scene_name":"助力完成通知", "template_type": "1", "default_template": "恭喜您，您的${商品名称}助力成功，支付金额：${支付金额}元，数量有限，请于${结束时间}前支付", "variables": [{"var_name": "item_name", "var_title": "商品名称"}, {"var_name": "pay_money", "var_title": "支付金额"}, {"var_name": "end_time", "var_title": "结束时间"}]
+    },
+    {
+        "scene_title": "registration_result_notice","scene_name":"报名活动审核通过通知", "template_type": "1", "default_template": "您参与的${活动名称}活动，已经${审核结果}", "variables": [{"var_name": "activity_name", "var_title": "活动名称"}, {"var_name": "review_result", "var_title": "审核结果"}]
+    },
+    {
+        "scene_title": "admin_account_approved","scene_name":"Adapay支付配置 主商户开户申请审批完成","template_type":"1","default_template":"${法人姓名}您好:\n您提交的主商户开户申请${步骤}已审批完成，请及时查看。","variables":[{"var_name": "legal_person", "var_title": "法人姓名"},{"var_name": "step", "var_title": "步骤"}]
+    },
+    {
+        "scene_title": "sub_account_approved","scene_name":"Adapay支付配置 开户申请审批完成", "template_type": "1", "default_template": "${法人姓名}您好:\n您所在的${商户名称}提交的开户申请已审批完成，请及时查看。", "variables": [{"var_name": "legal_person", "var_title": "法人姓名"}, {"var_name": "mer_name", "var_title": "商户名称"}]
+    },
+    {
+        "scene_title": "reset_pwd","scene_name":"Adapay支付配置 修改密码", "template_type": "1", "default_template": "${联系人}您好:\n您所在的${经销商名称}在云店后台重置的密码为:${随机密码}", "variables": [{"var_name": "username", "var_title": "经销商名称"}, {"var_name": "contact", "var_title": "联系人"}, {"var_name": "password", "var_title": "随机密码"}]
+    },
+    {
+        "scene_title": "adapay_verify","scene_name":"Adapay支付配置 短信验证码", "template_type": "0", "default_template": "尊敬的用户，您好，您的手机验证码是：${验证码}。", "variables": [{"var_name": "code", "var_title": "验证码"}]
+    },
+    {
+        "scene_title": "sms_task","scene_name": "推广", "template_type": "2"
+    }
+]
