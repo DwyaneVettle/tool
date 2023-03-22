@@ -2,7 +2,7 @@
 
 ​	大家知道，电脑是美国人发明的，目的是用来处理数据的。发明电脑的同时，美国人也面临了相应的问题：如何把美国人使用的字符（a-z A-Z 0-9 其他字符）存储到计算机中？他们为自己会使用的字符进行了编号，将字符和编号进行匹配，然后将编号转换为二进制数据存储，那么ASCII码就形成了。
 
-<img src="ASCII、Unicode、GBK、UTF-8之间的关系.assets/image-20221112211916871.png" alt="image-20221112211916871" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171725683.png" alt="image-20221112211916871" style="zoom:50%;" />
 
 ## 一、ASCII编码
 
@@ -24,9 +24,9 @@
 
 下面为ASCII码表：
 
-![](ASCII、Unicode、GBK、UTF-8之间的关系.assets/ASCII.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171725684.png)
 
-![](ASCII、Unicode、GBK、UTF-8之间的关系.assets/ascii2.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171725685.png)
 
 
 
@@ -47,7 +47,7 @@
 
 GBK规定：**汉字的第一个字节的第一位必须是1**，而ASCII码的第一位是0，所以计算机可以根据首位来进行判断。那么“我a你”就可以表示为如下二进制：
 
-![image-20221112213054985](ASCII、Unicode、GBK、UTF-8之间的关系.assets/image-20221112213054985.png)
+![image-20221112213054985](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171725686.png)
 
 
 
@@ -75,17 +75,17 @@ Unicode符号范围（十六进制）      |     UTF-8编码方式(二进制)
 
 下图以"a我m"为例：
 
-![image-20221112213704024](ASCII、Unicode、GBK、UTF-8之间的关系.assets/image-20221112213704024.png)
+![image-20221112213704024](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171725687.png)
 
-![image-20221112213958597](ASCII、Unicode、GBK、UTF-8之间的关系.assets/image-20221112213958597.png)
+![image-20221112213958597](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171725688.png)
 
 我们可以在IDEA中转换编码方式看看字符的变化：
 
-<img src="ASCII、Unicode、GBK、UTF-8之间的关系.assets/image-20221112214157476.png" alt="image-20221112214157476" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171725689.png" alt="image-20221112214157476" style="zoom:50%;" />
 
 上图代码编码集为为GBK，转换为UTF-8后：
 
-<img src="ASCII、Unicode、GBK、UTF-8之间的关系.assets/image-20221112214323892.png" alt="image-20221112214323892" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171725690.png" alt="image-20221112214323892" style="zoom:50%;" />
 
 
 
@@ -123,9 +123,9 @@ utf-8<--------encode(编码)-----Unicode类型-------encode(编码)----->gbk
 
 ## 八、Java实现编码解码
 
-![image-20221112214522170](ASCII、Unicode、GBK、UTF-8之间的关系.assets/image-20221112214522170.png)
+![image-20221112214522170](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171725691.png)
 
-![image-20221112214548741](ASCII、Unicode、GBK、UTF-8之间的关系.assets/image-20221112214548741.png)
+![image-20221112214548741](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171725692.png)
 
 ```java
 package com.ztr.worm;

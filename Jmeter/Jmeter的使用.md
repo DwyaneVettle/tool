@@ -24,6 +24,8 @@ Apache jmeter 可以用于对静态的和动态的资源（文件，Servlet，Pe
 
 **JMeter的高可扩展性**
 
+
+
 1.可链接的取样器允许无限制的测试能力。
 
 2.各种负载统计表和可链接的[计时器](https://baike.baidu.com/item/计时器)可供选择。
@@ -38,7 +40,7 @@ Apache jmeter 可以用于对静态的和动态的资源（文件，Servlet，Pe
 
 相比其他HTTP测试工具,JMeter最主要的特点在于扩展性强。JMeter能够自动扫描其lib/ext子目录下.jar文件中的[插件](https://baike.baidu.com/item/插件)，并且将其装载到内存，让用户通过不同的菜单调用。
 
-<img src="C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20220602145529651.png" alt="image-20220602145529651" style="zoom:67%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721137.png" alt="image-20220602145529651" style="zoom:67%;" />
 
 
 
@@ -54,13 +56,13 @@ Apache jmeter 可以用于对静态的和动态的资源（文件，Servlet，Pe
 
 下载安装好后点击jmeter安装目录下的bin/jmeter.bat就可以运行了，运行界面如下：
 
-<img src="Jmeter的使用.assets/image-20220602150407250.png" alt="image-20220602150407250" style="zoom: 50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721138.png" alt="image-20220602150407250" style="zoom: 50%;" />
 
 
 
 按如下方式可以设置中文：
 
-<img src="Jmeter的使用.assets/image-20220602150531093.png" alt="image-20220602150531093" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721139.png" alt="image-20220602150531093" style="zoom:50%;" />
 
 如上方式设置重启后还是变成英文，如果想要设置永久有效，可以找到安装目录下的/bin/jmeter.propertise文件做如下设置：
 
@@ -68,7 +70,7 @@ Apache jmeter 可以用于对静态的和动态的资源（文件，Servlet，Pe
 language=zh-CN
 ```
 
-<img src="Jmeter的使用.assets/image-20220602150946701.png" alt="image-20220602150946701" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721140.png" alt="image-20220602150946701" style="zoom:50%;" />
 
 
 
@@ -82,11 +84,11 @@ language=zh-CN
 
 ​	通过鼠标右键点击测试计划Test Plan节点，并从"add"列表中选择一个新的元素就可以添加一个测试计划。另外，元素可以从文件中加载，并通过选择"merge"或"open"选项添加。例如：添加一个线程组原件测试计划：
 
-<img src="Jmeter的使用.assets/image-20220602151954820.png" alt="image-20220602151954820" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721141.png" alt="image-20220602151954820" style="zoom:50%;" />
 
 要删除一个元素，确保元素被选中，右键单击该元素，然后选择"remove"删除选项：
 
-<img src="Jmeter的使用.assets/image-20220602152131474.png" alt="image-20220602152131474" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721142.png" alt="image-20220602152131474" style="zoom:50%;" />
 
 
 
@@ -94,7 +96,7 @@ language=zh-CN
 
 从文件加载一个元素，右键单击您要添加的加载元件对现有树元素，并选择“merge”合并选项。选择文件保存元素。 JMeter会合并的元素，放到树上。
 
-<img src="Jmeter的使用.assets/image-20220602152404112.png" alt="image-20220602152404112" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721143.png" alt="image-20220602152404112" style="zoom:50%;" />
 
 为了保存树元素，元素上点击右键并选择选择另存为…选项。 JMeter会保存选定的元素，再加上它下面的所有子元素。默认情况下，不保存JMeter 的元素，需要明确地保存它，如前面提到的。
 
@@ -104,7 +106,7 @@ language=zh-CN
 
 可以保存整个测试计划到本地，方便随时使用。点击菜单栏"File"文件选项，选择保存"Save"或"Save Test Plan as"：
 
-<img src="Jmeter的使用.assets/image-20220602152655058.png" alt="image-20220602152655058" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721144.png" alt="image-20220602152655058" style="zoom:50%;" />
 
 
 
@@ -112,7 +114,7 @@ language=zh-CN
 
 从Run菜单项中选择运行-启动“Start ”（控制+ R）。当运行JMeter是，它显示了一个绿色的小盒子，右手端的部分，只是在菜单栏下。
 
-<img src="Jmeter的使用.assets/image-20220602152809266.png" alt="image-20220602152809266" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721145.png" alt="image-20220602152809266" style="zoom:50%;" />
 
 停止测试方法有两种：
 
@@ -174,7 +176,7 @@ language=zh-CN
 
 打开Jmeter，在菜单左侧出现"测试计划Test Plan"在这里测试计划我们可以把它理解成新建的空白项目，在这个空白项目下可以添加一系列的接口。
 
-<img src="Jmeter的使用.assets/image-20220602185737275.png" alt="image-20220602185737275" style="zoom: 50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721146.png" alt="image-20220602185737275" style="zoom: 50%;" />
 
 
 
@@ -182,7 +184,7 @@ language=zh-CN
 
 添加方法：右键单击Test Plan，找到添加，添加线程--线程组。一个线程组可以看作一个虚拟用户，线程组中的每个线程都可以理解为一个虚拟用户。
 
-![image-20220602190223453](Jmeter的使用.assets/image-20220602190223453.png)
+![image-20220602190223453](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721147.png)
 
 - **线程数：**即虚拟用户数，设置多少个线程数也就是设置多少虚拟用户；
 - **Ramp-Up时间(秒)：**设置虚拟用户数全部启动的时长，如果线程数为20秒，准备时长为10秒，那么需要10秒启动20个线程；
@@ -196,7 +198,7 @@ language=zh-CN
 
 HTTP Cookie管理器可以像浏览器一样存储和发送Cookie，如果你要发送一个带Cookie的HTTP请求，Cookie Manager会自动存储该请求的Cookies，并且发送同源站点的HTTP请时都可以使用该Cookie。
 
-![image-20220602191631500](Jmeter的使用.assets/image-20220602191631500.png)
+![image-20220602191631500](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721148.png)
 
 
 
@@ -208,7 +210,7 @@ HTTP Cookie管理器可以像浏览器一样存储和发送Cookie，如果你要
 
 HTTP请求默认值是为了方便填写后续内容而设置，主要填写IP和端口，后续的HTTP请求就不用每次都填写IP地址和端口号了。
 
-![image-20220602192013469](Jmeter的使用.assets/image-20220602192013469.png)
+![image-20220602192013469](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721149.png)
 
 
 
@@ -220,7 +222,7 @@ HTTP请求默认值是为了方便填写后续内容而设置，主要填写IP�
 
 HTTP请求包括接口请求方法、请求路径、请求参数等。
 
-![image-20220602192159021](Jmeter的使用.assets/image-20220602192159021.png)
+![image-20220602192159021](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721150.png)
 
 
 
@@ -247,7 +249,7 @@ HTTP请求包括接口请求方法、请求路径、请求参数等。
 
 检查接口是否访问成功，如果检查失败会提示找不到断言内容，没提示表示成功。
 
-![image-20220602193457461](Jmeter的使用.assets/image-20220602193457461.png)
+![image-20220602193457461](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721151.png)
 
 - **Apply to:**指断言的作用范围，通常发送一个请求只触发一个请求，所以勾选Main sample only就可以了；若发送一个请求可以触发多个服务器请求，就有main sample and sub-samples了。
   - Main sample and sub-samples：作用于主请求和子请求；
@@ -283,7 +285,7 @@ HTTP请求包括接口请求方法、请求路径、请求参数等。
 
 树状形式显示接口的访问结果，包括请求结果、请求内容、服务器的响应内容。
 
-![image-20220602201221689](Jmeter的使用.assets/image-20220602201221689.png)
+![image-20220602201221689](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171721152.png)
 
 
 

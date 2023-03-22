@@ -20,7 +20,7 @@ if (name != null) {
 
 在IDEA编辑器中，使用Postfix时，只需要8次，如下图：
 
-![](Ideal使用小技巧.assets/640.gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722149.gif)
 
 ​	在这个例子中，可以对比出使用Postfix前后的效果，使用之后在编码中减少了一半的手动按键操作，且生成的代码是自带格式化的。在实际的编码过程中，各项目大小和复杂度差异性虽然很大，但细化到这种基本单位的编程范式时，它们都是融会贯通的。
 
@@ -30,51 +30,51 @@ if (name != null) {
 
 - **var**:快速定义一个局部变量，自带IDE的类型推断
 
-![](Ideal使用小技巧.assets/640 (1).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722151.gif)
 
 - **notnull**:快速进行NPE的判空保护：
 
-![](Ideal使用小技巧.assets/640 (2).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722152.gif)
 
 - **nn**:同notnull，是它的简写，推荐用这个，更加便捷：
 
-![](Ideal使用小技巧.assets/640 (3).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722153.gif)
 
 - **try catch**:快速对当前语句添加try catch异常捕获，同时IDE还会对catch中的Exception自动做类型推断：
 
-![](Ideal使用小技巧.assets/640 (4).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722154.gif)
 
 - **cast**:快速实现类型强转，不需要反复使用()包裹和光标切换；配合instanceof使用时还能自动实现cast类型的推断：
 
-![](Ideal使用小技巧.assets/640 (5).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722155.gif)
 
 - **if**:快速实现if判断的代码范式：
 
-![](Ideal使用小技巧.assets/640 (6).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722156.gif)
 
 - **throw**:快速实现抛异常：
 
-![](Ideal使用小技巧.assets/640 (7).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722157.gif)
 
 - **for**:快速实现集合或数组的迭代：
 
-![](Ideal使用小技巧.assets/640 (8).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722158.gif)
 
 - **fori**:快速实现集合或数组的带索引值迭代；同时对整型数字也支持：
 
-![](Ideal使用小技巧.assets/640 (9).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722159.gif)
 
 - **sout/soutv**:快速实现（不带参数/带参数）的打印功能：
 
-![](Ideal使用小技巧.assets/640 (10).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722160.gif)
 
 - **return**:快速实现方法中的值返回逻辑：
 
-![](Ideal使用小技巧.assets/640 (11).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722161.gif)
 
 - **format**：快速实现字符串格式化：
 
-![](Ideal使用小技巧.assets/640 (12).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722162.gif)
 
 
 
@@ -86,15 +86,15 @@ if (name != null) {
 
 1）进入IDE设置界面，然后依次进入Editor => General => Postfix Completion => 面板左下角加号 => Java：
 
-<img src="Ideal使用小技巧.assets/640 (1).png" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722163.png" style="zoom:50%;" />
 
 2）在弹起的页面中，按照下图进行配置，然后保存退出设置页。
 
-<img src="Ideal使用小技巧.assets/640 (1)-1653125147263.png" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722164.png" style="zoom:50%;" />
 
 此时我们自定义的 isempty 这个Postfix即完成了，下面来看下实际使用的效果：
 
-![](Ideal使用小技巧.assets/640 (13).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722165.gif)
 
 ​	在实际开发过程中，对于根据已经输入的表达式就能决定接下来代码格式的功能，我们都能使用这种自定义方式进行代码的抽象和复用。
 
@@ -102,7 +102,7 @@ if (name != null) {
 
 ## 3.**Live Template**
 
-![](Ideal使用小技巧.assets/640 (14).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722166.gif)
 
 上面这段编码中，我先后使用了Live Template的以下三个模板能力：
 
@@ -114,13 +114,13 @@ if (name != null) {
 
 Live Template提供的预设模板要比Postfix要高出一个数量级，因此这里我就不进行一一演示，我们可以进行设置面板，然后按照Editor => Live Templates的路径自行查看，如下图：
 
-<img src="Ideal使用小技巧.assets/640.png" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722167.png" style="zoom:50%;" />
 
 和Postfix一样，Live Template也支持自定义模板，但它的自定义模板相对来说更加灵活和开放，甚至支持我们直接植入脚本。鉴于Live Template的高度灵活性，单独介绍这块会占据大量的篇幅，因此这里我将从几个实际的案例场景来开拓一下思路，而具体自定义拓展过程就不详细展开介绍了。
 
 - **Key值映射**：将DB中查询到 List<T> 结构的数据，根据Key值映射转化为 Map<K, T> 结构的数据，以便于进行后续的数据填充逻辑：
 
-![](Ideal使用小技巧.assets/640 (15).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722168.gif)
 
 - **DB批量查询**：在数据查询时，我们会有根据ID主键进行批量DB数据查询的诉求，如下：
 
@@ -132,7 +132,7 @@ List<User> users = userMapper.queryUserByIds(userIds);
 
 对于该问题其中一个解法是，将这个大的 userIds 拆分成多个批次，然后让这多个批次异步并行去查询。这里便使用Live Template来抽取一个针对该场景的代码模板，如下：
 
-![](Ideal使用小技巧.assets/640 (16).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722169.gif)
 
 按照该模板，我们的查询语句将变成这样：
 
@@ -199,7 +199,7 @@ return result
 
 此时就已经完成了跨设备的代码分享功能，为方便演示，这里就用 People1 和 People2 两个类来模拟两台独立的电脑。People1 将自己的一段代码复制到剪切板中，然后通过 push 模板调用 push 接口来将这段代码上传到Python服务应用中；People2 再通过 pull 脚本来调用服务端的 pull 接口，访问到 People1 上传的代码并输入到当前的代码编辑器中，实现效果如下图：
 
-![](Ideal使用小技巧.assets/640 (17).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722170.gif)
 
 
 
@@ -209,7 +209,7 @@ File Template，顾名思义，对应文件级别的模板。对于该模板，�
 
 按照下图的路径，来更改文件头的格式，IDE就会在我们新建一个类或接口时，根据这里的配置格式来自动生成对应的文件注释头。
 
-<img src="Ideal使用小技巧.assets/640 (2).png" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722171.png" style="zoom:50%;" />
 
 **抽象通用Controller**
 
@@ -330,7 +330,7 @@ public class ${Subject}Controller {
 
 模板定义完成，接下来来看一下实际的使用效果：
 
-![](Ideal使用小技巧.assets/640 (18).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722172.gif)
 
 这里使用 Goods 作为新的domain对象，可以看到，生成的 Controller 代码已经具备 UserController 的全部能力，并且生成的代码全部都是 Goods 相关的api，这样就实现了File Template的横向迁移能力。
 
@@ -344,13 +344,13 @@ IDEA中的快捷键多达上百个，我们很难把每个都记清楚，网上�
 
   通常情况下，我们可以使用 Shift + F6 对类名、方法名和变量名进行批量更改，但对于其他元素进行批量更改时，该快捷键特别合适，且不限编程语言。
 
-![](Ideal使用小技巧.assets/640 (19).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722173.gif)
 
 - **批量框选：Option + 鼠标左键拖拽**
 
 对于"对齐"的代码进行批量更改的最优解，没有之一：
 
-![](Ideal使用小技巧.assets/640 (20).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722174.gif)
 
 
 
@@ -358,7 +358,7 @@ IDEA中的快捷键多达上百个，我们很难把每个都记清楚，网上�
 
 快速调整代码执行顺序，免除繁琐的剪切粘贴过程：
 
-![](Ideal使用小技巧.assets/640 (21).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722175.gif)
 
 
 
@@ -366,7 +366,7 @@ IDEA中的快捷键多达上百个，我们很难把每个都记清楚，网上�
 
 对于整行/块的复制，效率远高于纯手动的复制粘贴：
 
-![](Ideal使用小技巧.assets/640 (22).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722176.gif)
 
 
 
@@ -374,7 +374,7 @@ IDEA中的快捷键多达上百个，我们很难把每个都记清楚，网上�
 
 前者，快速显示/隐藏当前方法体；后者，快速概览当前类的所有方法：
 
-![](Ideal使用小技巧.assets/640 (23).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722177.gif)
 
 
 
@@ -382,7 +382,7 @@ IDEA中的快捷键多达上百个，我们很难把每个都记清楚，网上�
 
 在方法被多文件或多处调用时，该方式替换效率极高：
 
-![](Ideal使用小技巧.assets/640 (24).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722178.gif)
 
 
 
@@ -390,7 +390,7 @@ IDEA中的快捷键多达上百个，我们很难把每个都记清楚，网上�
 
 开发中经常会出现需要复制多个文本的诉求，而PC默认的剪切板只能保存一个，该功能专门用来解决这个痛点：
 
-![](Ideal使用小技巧.assets/640 (25).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722179.gif)
 
 
 
@@ -400,23 +400,23 @@ IDEA中的快捷键多达上百个，我们很难把每个都记清楚，网上�
 
 1）抽局部变量：Command + Option + V
 
-![](Ideal使用小技巧.assets/640 (26).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722180.gif)
 
 2）抽成员变量：Command + Option + F
 
-![](Ideal使用小技巧.assets/640 (27).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722181.gif)
 
 3）抽静态常量：Command + Option + C
 
-![](Ideal使用小技巧.assets/640 (28).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722182.gif)
 
 4）抽方法入参：Command + Option + P
 
-![](Ideal使用小技巧.assets/640 (29).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722183.gif)
 
 5）抽方法：Command + Option + M
 
-![](Ideal使用小技巧.assets/640 (30).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722184.gif)
 
 
 
@@ -428,7 +428,7 @@ IDEA中的快捷键多达上百个，我们很难把每个都记清楚，网上�
 
 有一点值得说的就是，利用条件断点来实现运行期的代码植入功能，先看下图：
 
-![](Ideal使用小技巧.assets/640 (31).gif)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171722185.gif)
 
 
 

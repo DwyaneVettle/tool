@@ -59,9 +59,9 @@
 
 ​	Maven的官方下载网址为：https://maven.apache.org/download.cgi。下载解压后目录结构如下：
 
-![](Maven详细教程.assets/2022-03-03_125913.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723420.png)
 
-​	Maven默认使用的配置仓库是Maven自己提供的官方仓库，因为这个仓库地址在国外，所以下载jar包会非常的慢，所以需要将conf文件夹中的settings.xml文件进行修改，需要添加阿里云的镜像仓库-将mirror白哦前内容注释，并复制以下内容粘贴进去，并将jdk配置成1.8:
+​	Maven默认使用的配置仓库是Maven自己提供的官方仓库，因为这个仓库地址在国外，所以下载jar包会非常的慢，所以需要将conf文件夹中的settings.xml文件进行修改，需要添加阿里云的镜像仓库-将mirror前内容注释，并复制以下内容粘贴进去，并将jdk配置成1.8:
 
 ```xml
 <mirrors>
@@ -101,4 +101,4 @@
 
 File-->settings-->Build,Execution,Deploment-->Built Tools-->Mven:
 
-![](Maven详细教程.assets/2022-03-03_130718.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723421.png)

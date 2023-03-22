@@ -24,7 +24,7 @@ git是一个免费的、开源的分布式版本控制系统，可以快速高�
 
 ## 4.git的发展
 
-![image-20220208093556350](Git.assets/image-20220208093556350.png)
+![image-20220208093556350](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635284.png)
 
 
 
@@ -32,35 +32,35 @@ git是一个免费的、开源的分布式版本控制系统，可以快速高�
 
 ​	今日git官网 下载
 
-![image-20220208093844912](Git.assets/image-20220208093844912.png)
+![image-20220208093844912](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635285.png)
 
 - **安装步骤**
 
-![image-20220208101213216](Git.assets/image-20220208101213216.png)
+![image-20220208101213216](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635286.png)
 
-![image-20220208101251779](Git.assets/image-20220208101251779.png)
+![image-20220208101251779](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635287.png)
 
-![image-20220208101329240](Git.assets/image-20220208101329240.png)
+![image-20220208101329240](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635288.png)
 
-![	](Git.assets/image-20220208101409541.png)
+![	](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635289.png)
 
-![image-20220208101437455](Git.assets/image-20220208101437455.png)
+![image-20220208101437455](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635290.png)
 
-![image-20220208101455559](Git.assets/image-20220208101455559.png)
+![image-20220208101455559](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635291.png)
 
-![image-20220208101516960](Git.assets/image-20220208101516960.png)
+![image-20220208101516960](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635292.png)
 
-![image-20220208101925519](Git.assets/image-20220208101925519.png)
+![image-20220208101925519](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635293.png)
 
 ​	安装完成后，在桌面点击鼠标右键，看到git gui here和git bash here就表示已经安装成功。
 
-![image-20220208102039775](Git.assets/image-20220208102039775.png)
+![image-20220208102039775](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635294.png)
 
 ​	点击git bash here打开git终端。
 
 ## 6.git结构
 
-![image-20220208102310854](Git.assets/image-20220208102310854.png)
+![image-20220208102310854](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635295.png)
 
 ## 7.初始化本地仓库
 
@@ -87,7 +87,7 @@ git init					// 初始化本地仓库
 ll -a .git					// 查看.git文件夹下文件，config为配置文件信息
 ```
 
-<img src="Git.assets/image-20220208104155804.png" alt="image-20220208104155804" style="zoom: 80%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635296.png" alt="image-20220208104155804" style="zoom: 80%;" />
 
 ## 8.git常用命令
 
@@ -129,7 +129,7 @@ git reset --hard reflog中的黄色hash值			// 回退、前进都某一版本
 
 ​		在版本控制过程中，使用多条线同时推进多个任务，这里的多条线就是多分支。多分支可以并行开发，互不干扰，提高开发效率。如果有一个分支功能开发失败，直接删除这个分支就可以了，不会对其他分支产生影响。
 
-![image-20220208114129063](Git.assets/image-20220208114129063.png)
+![image-20220208114129063](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635297.png)
 
 ```git
 git branch -v               // 查看分支
@@ -166,9 +166,9 @@ git merge dev				// 合并dev分支
 
 ​	在码云或者github上创建自己的账号，并创建远程库。此处以githubhttps://github.com/为例。
 
-![image-20220208122031585](Git.assets/image-20220208122031585.png)
+![image-20220208122031585](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635298.png)
 
-![image-20220208122206455](Git.assets/image-20220208122206455.png)
+![image-20220208122206455](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635299.png)
 
 生成后就可以看到远程库的地址，但是地址较长，我们可以通过git设置远程库的别名：
 
@@ -188,7 +188,7 @@ git push -u 仓库地址 master
 
 我的github的token--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，不知道怎么生成token可以查阅https://blog.csdn.net/weixin_41010198/article/details/119698015
 
-![image-20220208132502356](Git.assets/image-20220208132502356.png)
+![image-20220208132502356](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171635300.png)
 
 
 

@@ -2,7 +2,7 @@
 
 参考：Linux中文社区
 
-![](Nginx.assets/1.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723756.png)
 
 **前言：**
 
@@ -31,7 +31,7 @@ Nginx是开源、高性能、高可靠的web和反向代理服务器，而且支
 
 对于前端来说 Node.js 并不陌生， Nginx 和 Node.js 的很多理念类似， HTTP 服务器、事件驱动、异步非阻塞等，且 Nginx 的大部分功能使用 Node.js 也可以实现，但 Nginx 和 Node.js 并不冲突，都有自己擅长的领域。Nginx 擅长于底层服务器端资源的处理（静态资源处理转发、反向代理，负载均衡等）， Node.js 更擅长上层具体业务逻辑的处理，两者可以完美组合。
 
-![](Nginx.assets/2.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723757.jpg)
 
 ## 2.Nginx安装
 
@@ -204,7 +204,7 @@ error_page 400 404 error.html;   # 同上
 
 用一张图清晰的展示它的层级结构：
 
-![](Nginx.assets/3.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723758.jpg)
 
 
 
@@ -245,7 +245,7 @@ worker_processes auto; # 与当前cpu物理核心数一致
 
 - worker_cpu_affinity:将每个worker子进程和cpu物理核心绑定：
 
-![](Nginx.assets/4.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723759.jpg)
 
 绑定的优势在于避免同一个worker子进程在不同cpu核心上的切换，缓存失效降低性能。但其并不能真正避免进程切换。
 
@@ -633,7 +633,7 @@ autoindex_localtime off; # 显示的⽂件时间为⽂件的服务器时间。�
 
 当访问 fe.lion.com/download/ 时，会把服务器 /opt/source/download/ 路径下的文件展示出来，如下图所示：
 
-![](Nginx.assets/5.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723760.jpg)
 
 
 
@@ -643,7 +643,7 @@ Nginx 提供给使用者的变量非常多，但是终究是一个完整的请�
 
 下面列举些项目中常用的变量：
 
-![](Nginx.assets/7.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723761.png)
 
 实例演示 var.conf ：
 
@@ -722,7 +722,7 @@ Nginx 的配置还有非常多，以上只是罗列了一些常用的配置，�
 
 不管是正向代理还是反向代理，实现的都是上面的功能。
 
-![](Nginx.assets/8.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723762.jpg)
 
 ### 5.1.正向代理
 
@@ -758,7 +758,7 @@ Nginx 的配置还有非常多，以上只是罗列了一些常用的配置，�
 
 动静分离是指在 Web 服务器架构中，将静态页面与动态页面或者静态内容接口和动态内容接口分开不同系统访问的架构设计方法，进而提示整个服务的访问性和可维护性。
 
-![](Nginx.assets/1.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723763.jpg)
 
 一般来说，都需要将动态资源和静态资源分开，由于 Nginx 的高并发和静态资源缓存等特性，经常将静态资源部署在 Nginx 上。如果请求的是静态资源，直接到静态资源目录获取资源，如果是动态资源的请求，则利用反向代理的原理，把请求转发给对应后台应用去处理，从而实现动静分离。
 
@@ -780,7 +780,7 @@ Nginx 的配置还有非常多，以上只是罗列了一些常用的配置，�
 
 举个具体的例子，晚高峰乘坐地铁的时候，入站口经常会有地铁工作人员大喇叭“请走 B 口， B 口人少车空....”，这个工作人员的作用就是负载均衡。
 
-![](Nginx.assets/2-1653968023401.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723764.jpg)
 
 Nginx 实现负载均衡的策略：
 
@@ -801,7 +801,7 @@ Nginx 实现负载均衡的策略：
 
 用于定义上游服务器（指的就是后台提供的应用服务器）的相关信息。
 
-![](Nginx.assets/3-1653968099279.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723765.jpg)
 
 ```shell
 语法：upstream name {
@@ -1004,7 +1004,7 @@ proxy_pass http://back_end/proxy;
 121.5.180.193 proxy.lion.club
 ```
 
-![](Nginx.assets/1-1653968567434.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723766.jpg)
 
 分析：
 
@@ -1080,7 +1080,7 @@ proxy_pass http://demo_server;
 
 在客户端机器执行 curl http://balance.lion.club/balance/ 命令：
 
-![](Nginx.assets/2-1653968683495.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723767.jpg)
 
 不难看出，负载均衡的配置已经生效了，每次给我们分发的上游服务器都不一样。就是通过简单的轮询策略进行上游服务器分发。
 
@@ -1460,11 +1460,11 @@ GZIP 是规定的三种标准 HTTP 压缩格式之一。目前绝大多数的网
 
 并不是每个浏览器都支持 gzip 的，如何知道客户端是否支持 gzip 呢，请求头中的 Accept-Encoding 来标识对压缩的支持。
 
-![](Nginx.assets/3-1653969403721.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723768.jpg)
 
 启用 gzip 同时需要客户端和服务端的支持，如果客户端支持 gzip 的解析，那么只要服务端能够返回 gzip 的文件就可以启用 gzip 了,我们可以通过 Nginx 的配置来让服务端支持 gzip 。下面的 respone 中 content-encoding:gzip ，指服务端开启了 gzip 的压缩方式。
 
-![](Nginx.assets/5-1653969429467.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723769.jpg)
 
 在 /etc/nginx/conf.d/ 文件夹中新建配置文件 gzip.conf ：
 
@@ -1514,7 +1514,7 @@ gzip_http_version 1.1;
 
 多进程结构 Nginx 的进程模型图：
 
-![](Nginx.assets/4-1653969512331.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723770.jpg)
 
 多进程中的 Nginx 进程架构如下图所示，会有一个父进程（ Master Process ），它会有很多子进程（ Child Processes ）。
 
@@ -1547,4 +1547,4 @@ reload 重载配置文件的流程：
 
 Nginx 的内部结构是由核心部分和一系列的功能模块所组成。这样划分是为了使得每个模块的功能相对简单，便于开发，同时也便于对系统进行功能扩展。Nginx 的模块是互相独立的,低耦合高内聚。
 
-![](Nginx.assets/6.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723771.jpg)

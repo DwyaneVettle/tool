@@ -22,7 +22,7 @@
 
 (2) web服务器是可以向 "发出请求的浏览器提供文档" 的程序，比如在访问百度时，其实就是在访问百度的服务器。
 
-![](Tomcat.assets/14bcab6ec3d58f3fea59d35a1c618a16.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726380.png)
 
 网络通信三要素
 	1. IP：电子设备(计算机)在网络中的唯一标识。
@@ -40,7 +40,7 @@
 
 C/S工作流程图：
 
-![](Tomcat.assets/CS.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726381.png)
 
 在C/S结构的情况下，不同的服务需要安装不同的客户端软件，
 比如QQ、迅雷、Foxmail这种情况下安装的软件会越来越多，同时也有许多弊端，
@@ -115,9 +115,9 @@ tomcat9,10 需要jdk8及以上支持
 
 #### 2.下载索引：
 
-![](Tomcat.assets/tomcat下载.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726382.png)
 
-![](Tomcat.assets/下载.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726383.png)
 
 ### 3.安装：
 
@@ -133,11 +133,11 @@ tomcat9,10 需要jdk8及以上支持
 
 **注意**：启动可能会有乱码的情况
 
-![](Tomcat.assets/启动乱码.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726384.png)
 
 解决办法：打开tomcat所在目录下的conf目录修改logging.properties，将47行的UTF-8修改成GBK
 
-![](Tomcat.assets/乱码解决.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726385.png)
 
 
 
@@ -151,7 +151,7 @@ tomcat9,10 需要jdk8及以上支持
 
 出现以下页面表示启动成功
 
-![](Tomcat.assets/启动后界面.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726386.png)
 
 #### 6.关于tomcat修改默认端口和端口号被占用问题：
 
@@ -161,7 +161,7 @@ tomcat9,10 需要jdk8及以上支持
 
 tomcat目录结构介绍
 
-![](Tomcat.assets/af86c51c1b50075b001b791487750003.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726387.png)
 
 tomcat服务器安装根目录下有很多子目录，这些目录的作用是：
 
@@ -182,17 +182,17 @@ work：用于存放tomcat服务器产生的工作文件（JSP翻译后的Servlet
 
 **第一步：点击run,选择Edit Configurations…（中文版的是点击运行，选择编辑结构）**
 
-![](Tomcat.assets/整合1.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726388.png)
 
 **第二步：找到Default,之后打开Default，找到Tomcat Server,选择Local（如果本地电脑做为服务器就选择Local）***
 
-![](Tomcat.assets/整合2.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726389.png)
 
 **第三步：点击Configure…选择Tomcat的安装目录完成部署**
 
-![](Tomcat.assets/整合3.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726390.png)
 
-![](Tomcat.assets/整合4.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726391.png)
 
 # Git--分布式版本控制
 
@@ -207,33 +207,33 @@ work：用于存放tomcat服务器产生的工作文件（JSP翻译后的Servlet
 - 多个开发者可以协作开发，避免代码冲突等不必要的因素；
 - 可以在本地根据自己的不同开发目的创建分支，修改代码。
 
-![](Tomcat.assets/git.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726392.jpg)
 
 ## 2.Git的下载：
 
 官网下载：https://git-scm.com/
 
-![](Tomcat.assets/git下载.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726393.png)
 
 ### Git安装：
 
 自定义安装目录后，一直下一步。
 
-![](Tomcat.assets/git安装定义地址.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726394.png)
 
 安装结束后，当鼠标右键出现如下图所示即表示安装成功：
 
-![](Tomcat.assets/成功标识.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726395.png)
 
 ## 3.Git的基本工作流程
 
 **1.git的工作区域**：
 
-![](Tomcat.assets/git的工作区域.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726396.png)
 
 **2.向仓库中添加文件的流程：**
 
-![](Tomcat.assets/向仓库中添加文件流程.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726397.png)
 
 ## 4.idea配置Git
 
@@ -243,7 +243,7 @@ work：用于存放tomcat服务器产生的工作文件（JSP翻译后的Servlet
 
 ##### 3.然后点击Test检测是否配置成功
 
-![](Tomcat.assets/idea配置git.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726398.png)
 
 ## 5.idea安装Gitee插件
 
@@ -251,7 +251,7 @@ work：用于存放tomcat服务器产生的工作文件（JSP翻译后的Servlet
 
 安装步骤：在idea-->File-->Settings-->Plugins中搜索Gitee，然后install
 
-![](Tomcat.assets/gitee安装步骤.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726400.png)
 
 **注意：一般情况下：安装插件需要重启idea后，插件才能起作用。**
 
@@ -283,7 +283,7 @@ work：用于存放tomcat服务器产生的工作文件（JSP翻译后的Servlet
 
 2.1可以在任一磁盘中鼠标右键创建文件夹，也可以通过git命令的形式来创建
 
-![](Tomcat.assets/创建仓库.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726401.png)
 
 2.2在文件夹内初始化git(创建git仓库)
 
@@ -309,7 +309,7 @@ git init
 
 可以通过命令git status查看状态
 
-![](Tomcat.assets/git向仓库添加文件.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726402.png)
 
 **4.提交文件到仓库**
 
@@ -346,11 +346,11 @@ git rm '文件名'
 
 **Git远程仓库实际上就是保持在服务器上的git仓库文件**
 
-![](Tomcat.assets/远程仓库.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726403.png)
 
-![](Tomcat.assets/远程操作.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726404.png)
 
-![](Tomcat.assets/向仓库中添加文件流程-1623246814025.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726405.png)
 
 # 8.克隆操作
 
@@ -362,45 +362,45 @@ git rm '文件名'
 git clone 仓库地址
 ```
 
-![](Tomcat.assets/获取地址.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726406.png)
 
-![](Tomcat.assets/克隆成功.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726407.png)
 
 克隆成功后本地仓库就增加了在远程仓库中获取过来的代码文件
 
-![](Tomcat.assets/成功后.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726408.png)
 
 **你也可以在idea中clone代码** 
 
 在idea功能栏git/VCS中点击clone,然后将复制的仓库地址粘贴到URL中
 
-![](Tomcat.assets/clone.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726409.png)
 
-![](Tomcat.assets/clone2.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726410.png)
 
 **你也可以创建远程仓库将本地代码推送到远程仓库**
 
-![](Tomcat.assets/创建仓库 (2).png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726411.png)
 
 **1 提交本地代码到仓库：选中要推送的项目鼠标右键git---commit directory---输入提交信息---commit**
 
-![](Tomcat.assets/本地提交到仓库.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726412.png)
 
-![](Tomcat.assets/commit mes.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726413.png)
 
 2 **提交后需要进行push操作才能推送到远程仓库**
 
-![](Tomcat.assets/push.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726414.png)
 
 3 **勾选中要推送的项目再点击push**
 
-![](Tomcat.assets/push2.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726415.png)
 
 
 
 4  **push后可能需要输入码云或github等远程仓库的注册名和密码**
 
-![](Tomcat.assets/输入用户名密码.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726416.png)
 
 5 **当idea右下角出现push successful即表示已经将代码推送到远程仓库。**
 
@@ -408,7 +408,7 @@ git clone 仓库地址
 
 file-settings--version control
 
-![](Tomcat.assets/没有git的处理.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726417.png)
 
 ## 扩展二：切换分支
 
@@ -416,19 +416,19 @@ file-settings--version control
 
 在idea中pull代码后，在右下角的master处进行切换：点击master然后check out：
 
-![](Tomcat.assets/分支切换.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726418.png)
 
 ## 扩展三：多人协同开发
 
 以码云为例，多人协同开发需要进入到仓库中点击管理，选择仓库成员管理，添加开发者，将开发连接分享给其他开发者即可
 
-![](Tomcat.assets/协作开发.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726419.png)
 
 初次进入仓库需要配置公钥才能进行代码的拉取，配置公钥也是在管理中配置
 
 配置步骤按下图所示：
 
-![](Tomcat.assets/公钥.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726420.png)
 
 ## 扩展四：SVN安装使用
 
@@ -456,15 +456,15 @@ file-settings--version control
 
 ## 官网下载：https://maven.apache.org/download.cgi
 
-<img src="Tomcat.assets/maven下载.png" style="zoom: 50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726421.png" style="zoom: 50%;" />
 
-<img src="Tomcat.assets/maven下载版本.png" style="zoom: 50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726422.png" style="zoom: 50%;" />
 
 ## 2.Maven规定得目录结构
 
 若要使用Maven，那么项目的目录结构必须符合Maven的规范，其目录结构如下：
 
-![](Tomcat.assets/maven规定得目录结构.jpg)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171726423.jpg)
 
 
 

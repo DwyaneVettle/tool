@@ -6,17 +6,17 @@
 
 进入官网https://www.mysql.com/进行下载：
 
-<img src="Mysql安装教程.assets/2022-03-08_152831.png" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723165.png" style="zoom:50%;" />
 
-<img src="Mysql安装教程.assets/2022-03-08_152944.png" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723166.png" style="zoom:50%;" />
 
-<img src="Mysql安装教程.assets/2022-03-08_153030.png" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723167.png" style="zoom:50%;" />
 
-<img src="Mysql安装教程.assets/2022-03-08_153113.png" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723168.png" style="zoom:50%;" />
 
-![](Mysql安装教程.assets/2022-03-08_153250.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723169.png)
 
-<img src="Mysql安装教程.assets/2022-03-08_153332.png" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171723170.png" style="zoom:50%;" />
 
 
 

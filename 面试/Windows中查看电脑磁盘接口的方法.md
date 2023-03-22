@@ -6,8 +6,8 @@
 
 ​	用Win+R键输入cmd，输入"diskpart"命令，回车后会弹出"diskpart.exe"命令提示符窗口。在窗口中分别输入下面第三图的命令进行查看：
 
-<img src="C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20220914211629577.png" alt="image-20220914211629577" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171731042.png" alt="image-20220914211629577" style="zoom:50%;" />
 
-<img src="C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20220914211650930.png" alt="image-20220914211650930" style="zoom:50%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171731043.png" alt="image-20220914211650930" style="zoom:50%;" />
 
 ![](C:\Users\HP\Desktop\2022-09-14_211919.png)

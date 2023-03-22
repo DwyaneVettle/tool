@@ -2,7 +2,7 @@
 
 ​	疫情之下，陕西、四川等地的健康码、核酸系统都出现了短暂的崩溃，软件开发的高并发再次引起了程序员的一阵讨论。以下截取了阿里工程师tony guo的一篇朋友圈，其中的GPS等高并发指标你知道是什么含义吗？
 
-![image-20220909235050930](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20220909235050930.png)
+![image-20220909235050930](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171732986.png)
 
 ## 1.QPS-每秒查询数
 
@@ -82,11 +82,11 @@ QPS = (3000000 * 0.8) / (24 * 60 * 60 * 0.2) = 139
 
 我们想象的QPS、RT关系如下：
 
-![image-20220910003723830](什么是QPS、TPS、RT、吞吐量？.assets/image-20220910003723830.png)
+![image-20220910003723830](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171732987.png)
 
 实际的QPS、RT关系如下：
 
-![image-20220910003743052](什么是QPS、TPS、RT、吞吐量？.assets/image-20220910003743052.png)
+![image-20220910003743052](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202302171732988.png)
 
 
 
