@@ -24,8 +24,6 @@ Apache jmeter 可以用于对静态的和动态的资源（文件，Servlet，Pe
 
 **JMeter的高可扩展性**
 
-
-
 1.可链接的取样器允许无限制的测试能力。
 
 2.各种负载统计表和可链接的[计时器](https://baike.baidu.com/item/计时器)可供选择。
@@ -48,9 +46,9 @@ Apache jmeter 可以用于对静态的和动态的资源（文件，Servlet，Pe
 
 进入官网https://jmeter.apache.org/，找到下载入口，下载对应的版本：
 
-![](C:\Users\HP\Desktop\1.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303010824688.png)
 
-<img src="C:\Users\HP\Desktop\2.png" style="zoom:67%;" />
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303010824684.png" style="zoom:67%;" />
 
 
 
@@ -303,13 +301,218 @@ http://www.jmeter.com.cn/2754.html
 
 
 
+## 6.测试实例
+
+### 6.1.Jmeter发送get请求
+
+步骤：**测试计划---添加线程组---添加取样器---HTTP请求**
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303201139980.png)
+
+
+
+接口参考网站：https://www.juhe.cn/docs/api/id/65，添加信息如下：
+
+![image-20230320120436911](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303201204067.png)
+
+
+
+key：21f3d56edc75e82afaede5d8bbc2f6b1
+
+在线程组中：添加**监听器---察看结果树**
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303201159064.png)
 
 
 
 
 
+### 6.2.Jmeter发送post请求
+
+步骤：**线程组---添加取样器---HTTP请求**，将请求方式设置为post请求。
+
+![image-20230320145649277](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303201456686.png)
+
+
+
+### 6.3.HTTP请求默认值
+
+​	目的：有时候，请求的数据有很多个，且大部分的请求路径、参数、端口等数据相同，所以不必要每个请求都添加这些数据，我们可以添加HTTP请求默认值。
+
+​	步骤：**选择线程组---添加配置元件---HTTP请求默认值**。配置请求的默认值即可，这样该线程组的数据都能共享到该默认值。
+
+​	如上面的get和post请求的服务器名称、路径、参数key都相同，我们就可以创建HTTP请求默认值，把这些数据提取出来，然后请求也是可达的。
+
+![image-20230320150319824](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303201503999.png)
 
 
 
 
 
+### 6.4.响应断言
+
+​	Jmeter中有个元件叫做断言（Assertion），它的作用和loadrunner中检查点类似：用于检查测试中得到的响应数据等是否符合预期，用以保证性能测试过程中数据交互与预期一致。
+
+​	使用断言的目的是：在request返回层面增加一层判断机制，因为request成功了，并不代表结果一定正确。所以通过断言，我们不再会被200所迷惑，而是可以通过断言，看到我们请求是否真正成功。
+
+- 我们添加一个http请求，请求url为`abc.oracleoaec.com`。并在这个请求中添加`响应断言`。添加方式为：**HTTP请求---断言---响应断言**
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261053804.png" alt="image-20230326105339589" style="zoom:50%;" />
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261056959.png)
+
+- 如需查看到响应断言的结果，需要添加断言结果，步骤为：**HTTP请求---监听器---断言结果**。点击HTTP请求运行，在断言结果中查看断言结果：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261100085.png" style="zoom:50%;" />
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261101980.png)
+
+
+
+### 6.5.用户自定义变量
+
+​	之前我们在做“老黄历”的HTTP请求时，只有添加的日期是不固定的，每次都需要修改的。我们可以添加一组用户自定义变量，以方便测试。添加步骤为：**线程组---添加配置元件---用户自定义变量**。点击下面的添加，添加需要测试的自定义变量，变量以k-v形式存在：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261117082.png" alt="image-20230326111748934" style="zoom:50%;" />
+
+
+
+​	添加完自定义变量后，在"HTTP请求"中，添加的请求变量名仍然使用原有的名字，值用**$(自定义变量名)**引入：
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261121450.png)
+
+
+
+
+
+### 6.6.参数化txt
+
+​	请求登录地址：https://abc.oracleoaec.com/，传递两个参数：**mobilephone**和**pwd**。
+
+​	我们针对这个登录接口设计5条测试用例：
+
+- 正常登录
+- 正确的用户名和错误的密码
+- 不输入用户名
+- 不输入密码
+- 输入错误的用户名
+
+测试步骤：
+
+- 添加一个新的线程，取名“登录接口”，添加一个HTTP请求，取名“正常登录”。选择**“登录接口”的请求---添加配置元件---HTTP请求默认值**：
+
+![image-20230326115626859](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261157764.png)
+
+- 在“正确登录”窗口，添加两个参数mobilephone和pwd：
+
+![image-20230326115706013](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261157727.png)
+
+- 添加察看结果树：**登录接口---添加监听器---察看结果树**，后点击运行，查看到结果：
+
+![image-20230326115751960](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261157109.png)
+
+- 选中“正常登录”，按下Ctrl+Shift+C复制5条测试用例，并修改名字为我们需要的测试用例：
+
+![image-20230326120038658](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261200726.png)
+
+- 根据测试用例的需求，修改参数的值，如不输入用户名，就把用户名清空。点击察看结果树，再点击上方导航栏的清除（扫把按钮），清除之前的结果，再点击运行：
+
+![image-20230326120434524](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261204623.png)
+
+
+
+
+
+​	此时我们发现，随着测试用例的增多，我们测试人员的工作也会陡然增加，那么这时我们就可以引入**text元件**来管理测试用例，它可以用来存储测试用例。添加步骤如下：
+
+- **点击登录接口--添加配置元件---CSV数据文件设置**，禁用其他用例，只保留一个，并修改名为测试用例：
+
+![image-20230326121107379](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261211451.png)
+
+- CSV数据文件设置需要引入一个文件作为测试用例的数据，我们起名为`jmeter_csv.txt`，数据为k-v结构，文件内容如下：
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261217947.png)
+
+- 在“CSV数据文件设置”中引入文件：
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261221161.png)
+
+- 在“登录接口”的页面，将循环次数改为5次（匹配jmeter_csv.txt数据个数）：
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261224728.png)
+
+- 在“测试用例”页面用**$(变量名)**（该变量名为csv数据文件设置中的变量名称）的方式引入变量：
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261226501.png)
+
+- 点击运行，察看结果树得到想要的结果（对应之前的数据）：
+
+![image-20230326122716281](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303261227429.png)
+
+
+
+​	**这种方法适合批量数据的测试。**但还有一种方式更加简便，那就是在本地创建一个表格，将数据保存到表格中，然后将数据另存为csv格式，引入方式和txt方式一样。
+
+![image-20230326201056374](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303262011527.png)
+
+
+
+
+
+## 7.Jmeter录制web脚本
+
+​	想要完成脚本录制，我们需要完成如下两步：
+
+- 设置Jmeter相关参数
+
+  - 创建一个线程：**测试计划---添加线程组**
+  - **测试计划---添加非测试单元---HTTP代理服务器**。要注意设置好端口和对应分组，方便后期收集脚本。
+    - 此处的分组我们要匹配上面添加的线程组，端口要是本地没有被占用的线程组。
+  
+  ![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272016307.png)
+  
+  
+
+- 设置浏览器
+
+  - 打开控制面板---点击Internet选项---连接---局域网设置---点击高级---HTTP地址设置为`127.0.0.1`，端口设置为`8888`.（也可在浏览器设置--系统--打开代理设置设置）
+
+  ![image-20230327203116495](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272031600.png)
+
+![image-20230327205825397](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272058564.png)
+
+- 点击HTTP代理服务器的`运行`按钮，再点击整数确定按钮
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272047478.png)
+
+![image-20230327204453806](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272044172.png)
+
+![](C:/Users/HP/Desktop/脚本成功录制.png)
+
+
+
+
+
+### 7.1.登录脚本录制实战
+
+登录网站：http://cfgjt.cn:8981/devt-web
+
+账号：admin
+
+密码：11111111
+
+- 创建代理：**测试计划---线程组---添加非测试元件---HTTP代理服务器**，设置如下：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272102404.png" alt="image-20230327210257234" style="zoom:50%;" />
+
+- 打开浏览器，设置代理服务器为`127.0.0.1`，端口为`8888`:
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272103377.png" alt="image-20230327210347267" style="zoom:50%;" />
+
+- 开启录制脚本，并在浏览器请求网站http://cfgjt.cn:8981/devt-web进行登录：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272105921.png" alt="image-20230327210501823" style="zoom:50%;" />
+
+- 停止录制，生成录制结果
+
+![image-20230327211323934](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272113029.png)
